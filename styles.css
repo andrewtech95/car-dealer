@@ -1,0 +1,11 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.content {
+  height: 100vh;
+  background-image: url(./obi-pixel7propix-aZKJEvydrNM-unsplash.jpg);
+  background-size: cover;
+}
+
