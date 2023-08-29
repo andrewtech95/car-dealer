@@ -1,11 +1,65 @@
-body {
+* {
   margin: 0;
+  padding: 0;
+}
+
+body {
   font-family: sans-serif;
+  color: white;
 }
 
 .content {
   height: 100vh;
   background-image: url(./obi-pixel7propix-aZKJEvydrNM-unsplash.jpg);
   background-size: cover;
+  display: flex;
 }
 
+.form-section {
+  flex: 1;
+  background-color: rgba(0, 0, 0, 0.75);
+  padding-left: 48px;
+}
+
+
+h1 {
+  color: white;
+  font-size: 4rem;
+  margin-top: 30px;
+}
+
+form {
+  margin-top: 48px;
+}
+
+.input-row {
+  display: flex;
+  margin-bottom: 18px;
+  column-gap: 40px;
+}
+
+.inputs-section label {
+  display: block;
+  margin-bottom: 1px;
+  font-size: 1.4rem;
+}
+
+.inputs-section input {
+  font-size: 1rem;
+}
+
+.button {
+  box-shadow: 2px 5px 5px 4px rgba(0, 0, 0, 0.1);
+  border: none;
+  border-radius: 8px;
+  padding: 12px 48px;
+  margin: 32px 0 0;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.output-section {
+  flex: 1;
+  background-color: rgba(0, 0, 0, 0.75);
+}
