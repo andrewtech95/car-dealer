@@ -42,10 +42,14 @@ form {
   display: block;
   margin-bottom: 1px;
   font-size: 1.4rem;
+  letter-spacing: 0.02rem;
 }
 
 .inputs-section input {
   font-size: 1rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 4px;
+  padding: 4px 8px;
 }
 
 .button {
