@@ -16,7 +16,7 @@ body {
 }
 
 .form-section {
-  flex: 1;
+  flex: 2;
   background-color: rgba(0, 0, 0, 0.75);
   padding-left: 48px;
 }
@@ -38,6 +38,10 @@ form {
   column-gap: 40px;
 }
 
+div.input {
+  width: 200px;
+}
+
 .inputs-section label {
   display: block;
   margin-bottom: 1px;
@@ -46,10 +50,13 @@ form {
 }
 
 .inputs-section input {
-  font-size: 1rem;
+  font-size: 1.5rem;
+  text-align: end;
   border: 1px solid #e5e7eb;
   border-radius: 4px;
   padding: 4px 8px;
+  box-sizing: border-box;
+  width: 100%;
 }
 
 .button {
@@ -60,6 +67,7 @@ form {
   margin: 32px 0 0;
   font-size: 1.1rem;
   font-weight: 700;
+  letter-spacing: 0.02rem;
   cursor: pointer;
 }
 
