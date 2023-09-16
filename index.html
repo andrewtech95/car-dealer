@@ -4,89 +4,98 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Car dealer</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="../static/styles.css">
 </head>
 <body>
   <div class="content">
 
     <div class="form-section">
-      <h1 class="title">Car Dealer</h1>
+      <h1 class="title">Car-AI Dealer</h1>
 
-      <form action="#" method="get">
+      <form method="POST"> <!-- action="#" -->
         <div class="inputs-section">
 
           <div class="input-row">
             <div class="input">
               <label for="manufacturer">Manufacturer</label>
-              <input type="text" id="manufacturer" name="manufacturer" value="ford">
+              <input type="text" id="manufacturer" name="manufacturer" value="toyota">
             </div>
             <div class="input">
               <label for="fuel">Fuel</label>
-              <input type="text" id="fuel" name="fuel" value="diesel">
+              <input type="text" id="fuel" name="fuel" value="gas">
             </div>
             <div class="input">
               <label for="odometer">Odometer</label>
-              <input type="text" id="odometer" name="odometer" value="13158">
+              <input type="text" id="odometer" name="odometer" value="20308">
             </div>
           </div>
-          
+
           <div class="input-row">
             <div class="input">
               <label for="title_status">Title status</label>
-              <input type="text" id="title_status" name="title_status" value="1">
+              <input type="text" id="title_status" name="title_status" value="clean">
             </div>
             <div class="input">
               <label for="transmission">Transmission</label>
-              <input type="text" id="transmission" name="transmission" value="0">
+              <input type="text" id="transmission" name="transmission" value="automatic">
             </div>
             <div class="input">
               <label for="drive">Drive</label>
-              <input type="text" id="drive" name="drive" value="rwd">
+              <input type="text" id="drive" name="drive" value="fwd">
             </div>
           </div>
 
           <div class="input-row">
             <div class="input">
               <label for="type">Type</label>
-              <input type="text" id="type" name="type" value="truck">
+              <input type="text" id="type" name="type" value="sedan">
             </div>
             <div class="input">
               <label for="paint_color">Paint color</label>
-              <input type="text" id="paint_color" name="paint_color" value="white">
+              <input type="text" id="paint_color" name="paint_color" value="red">
             </div>
             <div class="input">
               <label for="state">State</label>
-              <input type="text" id="state" name="state" value="al">
+              <input type="text" id="state" name="state" value="ca">
             </div>
           </div>
 
           <div class="input-row">
             <div class="input">
               <label for="age">Age</label>
-              <input type="text" id="age" name="age" value="14">
+              <input type="text" id="age" name="age" value="0">
             </div>
             <div class="input">
               <label for="condition">Condition</label>
-              <input type="text" id="condition" name="condition" value="5">
+              <input type="text" id="condition" name="condition" value="like new">
             </div>
           </div>
 
           <div class="input-row">
             <div class="input">
               <label for="cylinders">Cylinders</label>
-              <input type="text" id="cylinders" name="cylinders" value="6">
+              <input type="text" id="cylinders" name="cylinders" value="4">
             </div>
             <div class="input">
               <label for="odom_per_year">Odom per year</label>
-              <input type="text" id="odom_per_year" name="odom_per_year" value="877.2">
+              <input type="text" id="odom_per_year" name="odom_per_year" value="20308">
             </div>
           </div>
         </div>
 
-        <button type="submit" class="button">Submit</button>
+        <!-- <button type="submit" class="button">Submit</button> -->
+          <input type="submit" value="prediction">
       </form>
     </div>
-    <div class="output-section"></div>
+    <div class="output-section">
+
+         {% if prediction %}
+
+         <p><h2>Estimated car value: {{ prediction }}$</h2></p>
+
+         {% endif %}
+    </div>
+
   </div>
 </body>
 </html>
