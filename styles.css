@@ -74,6 +74,9 @@ div.input {
 .output-section {
   flex: 1;
   background-color: rgba(0, 0, 0, 0.75);
+}
+
+.output-prediction {
   margin-top: 200px;
   margin-right: 200px;
 }

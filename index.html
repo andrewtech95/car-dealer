@@ -83,17 +83,16 @@
           </div>
         </div>
 
-        <!-- <button type="submit" class="button">Submit</button> -->
-          <input type="submit" value="prediction">
+        <input class="button" type="submit" value="prediction">
       </form>
     </div>
     <div class="output-section">
 
-         {% if prediction %}
-
-         <p><h2>Estimated car value: {{ prediction }}$</h2></p>
-
-         {% endif %}
+         <div class="output-prediction">
+           {% if prediction %}
+           <p><h2>Estimated car value: {{ prediction }}$</h2></p>
+           {% endif %}
+         </div>
     </div>
 
   </div>
